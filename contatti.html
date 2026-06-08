@@ -1,0 +1,97 @@
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti | Portfolio Jacopo Beltrani</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span>J</span>.B.</a>
+
+    <button class="menu-toggle" type="button">Menu</button>
+
+    <nav class="nav">
+      <a href="index.html">Chi sono</a>
+      <a href="pcto.html">FSL</a>
+      <a href="passioni.html">Passioni</a>
+      <a href="materie/EducazioneCivica.html">Educazione civica</a>
+
+      <div class="dropdown">
+        <a href="#">Ambito tecnico ↓</a>
+        <div class="dropdown-menu">
+          <a href="materie/Informatica.html">Informatica</a>
+          <a href="materie/InteligenzaArtificiale.html">Intelligenza Artificiale</a>
+          <a href="materie/Sistemi.html">Sistemi e Reti</a>
+          <a href="materie/Tpsit.html">TPSIT</a>
+          <a href="materie/Gpoi.html">GPOI</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Ambito umanistico ↓</a>
+        <div class="dropdown-menu">
+          <a href="materie/Italiano.html">Italiano</a>
+          <a href="materie/Storia.html">Storia</a>
+          <a href="materie/Inglese.html">Lingua straniera</a>
+          <a href="materie/Religione.html">Religione</a>
+          <a href="materie/Matematica.html">Matematica</a>
+          <a href="materie/EducazioneFisica.html">Educazione Fisica</a>
+        </div>
+      </div>
+
+      <a class="contact-btn active" href="contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero reveal">
+      <div>
+        <div class="eyebrow">Rimaniamo in contatto</div>
+        <h1>Contatti <em>Personali</em></h1>
+        <p class="lead">
+          Compila il modulo per inviarmi un messaggio direttamente via email.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-layout">
+        <div class="panel">
+          <h3>Informazioni</h3>
+          <p><strong>Email:</strong> jacopobeltrani7@gmail.com</p>
+          <p><strong>Luogo:</strong> Cupramontana, Marche, Italia</p>
+          <p><strong>Ruolo:</strong> Studente quinto anno</p>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/jacopobeltrani7@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio di Jacopo Beltrani">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <input type="text" name="nome" placeholder="Nome" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="messaggio" placeholder="Messaggio" required></textarea>
+
+          <button class="primary-btn" type="submit">Invia messaggio →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span data-year></span> Jacopo Beltrani — Portfolio scolastico</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+```

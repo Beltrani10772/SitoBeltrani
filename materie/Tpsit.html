@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TPSIT | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span>J</span>.B.</a>
+
+    <button class="menu-toggle" type="button">Menu</button>
+
+    <nav class="nav">
+      <a class="" href="../index.html">Chi sono</a><a class="" href="../pcto.html">FSL</a><a class="" href="../passioni.html">Passioni</a><a class="" href="EducazioneCivica.html">Educazione civica</a>
+      <div class="dropdown">
+        <a href="#">Ambito tecnico ↓</a>
+        <div class="dropdown-menu">
+            <a class="" href="Informatica.html">Informatica</a>
+            <a class="" href="InteligenzaArtificiale.html">Intelligenza Artificiale</a>
+            <a class="" href="Sistemi.html">Sistemi e Reti</a>
+            <a class="active" href="Tpsit.html">TPSIT</a>
+            <a class="" href="Gpoi.html">GPOI</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Ambito umanistico ↓</a>
+        <div class="dropdown-menu">
+            <a class="" href="Italiano.html">Italiano</a>
+            <a class="" href="Storia.html">Storia</a>
+            <a class="" href="Inglese.html">Lingua straniera</a>
+            <a class="" href="Religione.html">Religione</a>
+            <a class="" href="Matematica.html">Matematica</a>
+            <a class="" href="EducazioneFisica.html">Educazione Fisica</a>
+        </div>
+      </div>
+      <a class="contact-btn " href="../contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="page-hero reveal">
+    <div>
+      <div class="eyebrow">Materia scolastica</div>
+      <h1>Tpsit <em>Portfolio</em></h1>
+      <p class="lead">
+        Pagina dedicata alla concorrenza e al parallelismo in Java, due concetti
+        importanti per eseguire più attività all’interno di un programma.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Concorrenza e parallelismo in Java</h2>
+      <p>
+        In Java è possibile gestire più operazioni nello stesso programma usando
+        i thread. Questo permette di migliorare l’organizzazione del codice e,
+        in alcuni casi, anche le prestazioni dell’applicazione.
+      </p>
+    </div>
+
+    <div class="subject-list">
+      <article class="subject">
+        <h3>Concorrenza</h3>
+        <p>
+          La concorrenza permette a più attività di avanzare nello stesso periodo
+          di tempo. Non significa per forza che vengano eseguite nello stesso
+          identico istante, ma che il processore alterna rapidamente le operazioni.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Parallelismo</h3>
+        <p>
+          Il parallelismo si ha quando più attività vengono eseguite realmente
+          nello stesso momento, sfruttando più core del processore. È utile per
+          programmi che devono svolgere calcoli pesanti o molte operazioni insieme.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Differenza principale</h3>
+        <p>
+          La concorrenza riguarda l’organizzazione di più attività, mentre il
+          parallelismo riguarda la loro esecuzione simultanea. Un programma può
+          essere concorrente senza essere necessariamente parallelo.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Thread</h3>
+        <p>
+          Un thread è un flusso di esecuzione all’interno di un programma.
+          In Java più thread possono lavorare nello stesso processo, eseguendo
+          compiti diversi in modo indipendente.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="split">
+      <aside class="panel">
+        <h3>Classe Thread</h3>
+        <p>
+          In Java si può creare un thread estendendo la classe Thread e
+          ridefinendo il metodo run(). Dopo la creazione, il thread viene avviato
+          con il metodo start(), che fa partire l’esecuzione separata.
+        </p>
+      </aside>
+
+      <aside class="panel">
+        <h3>Interfaccia Runnable</h3>
+        <p>
+          Un altro modo per creare un thread è implementare l’interfaccia Runnable.
+          Questa soluzione è spesso più flessibile perché permette alla classe di
+          estendere eventualmente un’altra classe.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Gestione dei thread</h2>
+      <p>
+        I thread devono essere gestiti correttamente per evitare errori,
+        conflitti sui dati e comportamenti non prevedibili durante l’esecuzione.
+      </p>
+    </div>
+
+    <div class="subject-list">
+      <article class="subject">
+        <h3>Metodo start()</h3>
+        <p>
+          Il metodo start() avvia un nuovo thread. Non bisogna chiamare
+          direttamente run(), perché in quel caso il codice verrebbe eseguito
+          come un normale metodo, senza creare un vero thread separato.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Metodo run()</h3>
+        <p>
+          Il metodo run() contiene il codice che il thread deve eseguire.
+          Quando il thread viene avviato con start(), la JVM richiama
+          automaticamente il metodo run().
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Metodo sleep()</h3>
+        <p>
+          Il metodo sleep() permette di sospendere temporaneamente l’esecuzione
+          di un thread per un certo numero di millisecondi. È utile per simulare
+          attese o rallentare alcune operazioni.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Metodo join()</h3>
+        <p>
+          Il metodo join() permette a un thread di aspettare la fine di un altro
+          thread prima di continuare. È utile quando un’operazione deve terminare
+          prima di passare alla fase successiva.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="split">
+      <aside class="panel">
+        <h3>Problemi di concorrenza</h3>
+        <p>
+          Quando più thread accedono agli stessi dati, possono nascere problemi
+          come risultati sbagliati o modifiche sovrapposte. Questo accade perché
+          i thread possono leggere e scrivere una variabile nello stesso momento.
+        </p>
+      </aside>
+
+      <aside class="panel">
+        <h3>Sincronizzazione</h3>
+        <p>
+          La sincronizzazione serve a proteggere le risorse condivise. In Java
+          si può usare la parola chiave synchronized per fare in modo che solo
+          un thread alla volta possa eseguire una parte critica del codice.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Esempi di utilizzo</h2>
+      <p>
+        Concorrenza e parallelismo vengono usati in molti programmi moderni,
+        soprattutto quando ci sono attività indipendenti o operazioni lunghe.
+      </p>
+    </div>
+
+    <div class="subject-list">
+      <article class="subject">
+        <h3>Interfacce grafiche</h3>
+        <p>
+          Nei programmi con interfaccia grafica i thread permettono di eseguire
+          operazioni lunghe senza bloccare la finestra principale.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Server</h3>
+        <p>
+          Un server può usare più thread per gestire contemporaneamente le
+          richieste di più utenti collegati.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Download</h3>
+        <p>
+          Un’applicazione può scaricare file in background mentre l’utente
+          continua a usare normalmente il programma.
+        </p>
+      </article>
+
+      <article class="subject">
+        <h3>Calcoli pesanti</h3>
+        <p>
+          Il parallelismo può dividere un lavoro complesso in più parti,
+          assegnandole a thread diversi per sfruttare meglio il processore.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="panel">
+      <h3>Conclusione</h3>
+      <p>
+        La concorrenza e il parallelismo sono concetti fondamentali nella
+        programmazione Java. Attraverso i thread è possibile eseguire più attività,
+        migliorare la reattività dei programmi e sfruttare meglio le risorse del
+        computer. Tuttavia, quando più thread condividono gli stessi dati, è
+        importante usare correttamente la sincronizzazione per evitare errori.
+      </p>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <span>© <span data-year></span> Jacopo Beltrani — Portfolio scolastico</span>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
