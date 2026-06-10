@@ -1597,3 +1597,27 @@ body::after{
     radial-gradient(circle at 72% 16%, rgba(233,237,242,.11), transparent 36%),
     radial-gradient(circle at 42% 92%, rgba(95,111,136,.09), transparent 30%);
 }
+
+.cv-download-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:14px 0 18px;
+  padding:12px 20px;
+  border:1px solid var(--line-strong);
+  border-radius:999px;
+  color:var(--text);
+  font-family:"JetBrains Mono", monospace;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  transition:.25s ease;
+}
+
+.cv-download-btn:hover{
+  background:linear-gradient(135deg, #f7f8fa, #b8bec6);
+  color:#090909;
+  transform:translateY(-3px);
+  box-shadow:0 18px 45px rgba(207,211,216,.16);
+}
